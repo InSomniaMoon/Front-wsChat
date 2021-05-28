@@ -1,0 +1,23 @@
+.message-cont {
+  width: 100%;
+  margin: 30px;
+}
+
+.message-cont-self {
+  justify-content: flex-end;
+}
+.message {
+  max-width: 80%;
+  border-radius: 15px;
+  padding: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.self {
+  background-color: coral;
+}
+
+.other {
+  background-color: cadetblue;
+}

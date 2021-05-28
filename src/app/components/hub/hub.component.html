@@ -1,0 +1,10 @@
+<div class="col-12">
+  <div class="card-deck col-9 mx-auto">
+    <a class="card" *ngFor="let conv of (convs|async)" routerLink="/conversation/{{conv.id}}" > 
+      <div class="card-body">
+        <h4 class="card-title">{{displayParticipants(conv.participants)}}</h4>
+        <p class="card-text">{{displayLastMessage(conv.id)}}</p>
+      </div>
+    </a>
+  </div>
+</div>

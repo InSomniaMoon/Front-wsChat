@@ -1,0 +1,5 @@
+<div class="message-cont flex" [ngClass]="{'message-cont-self': isFromSelf()}">
+  <div class="message" [ngClass]="{'self': isFromSelf(), 'other': !isFromSelf()}">
+    <p>{{message.getBody()}}</p>
+  </div>
+</div>

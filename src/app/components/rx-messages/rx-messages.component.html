@@ -1,0 +1,24 @@
+<div class="flex-column main-container">
+
+  <div class="head">
+    <i-feather class="white" name=arrow-left (click)="goTo('/hub')"></i-feather>
+    <p class="h4 white">Conversation</p>
+    <i-feather class="white" name="info"></i-feather>
+  </div>
+  <div class="col-9 mx-auto cont">
+    <div class="message-cont" id="container-messages">
+      <p>COUCOU</p>
+      <app-message [message]=line *ngFor="let line of messages" class="flex"></app-message>
+    </div>
+    <div class="sender">
+      <form class="form-inline mb-5" (ngSubmit)="onSendMessage()">
+        <div class="form-group d-flex">
+          <input type="" [(ngModel)]="message" name="message" id="message" class="form-control"
+            placeholder="entrez un message">
+          <button class="btn" type="submit">Envoyer</button>
+          <button class=" btn btn-primary" (click)="sendBrut()">send msg</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,1 +1,34 @@
 /* You can add global styles to this file, and also import other style files */
+.big {
+  height: 40px !important;
+  width: 40px !important;
+}
+
+.normal {
+  height: 30px;
+  width: 30px;
+}
+
+.auto {
+  height: auto;
+  width: auto;
+}
+
+.white {
+  color: white;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.flex {
+  display: flex;
+}
+
+
+.fe-arrow-left {
+  -webkit-mask: url(/assets/icons/arrow-left.svg) no-repeat center;
+  mask: url(/assets/icons/arrow-left.svg) no-repeat center;
+  mask-size: 50px;
+}
