@@ -4,8 +4,8 @@
 
 export const environment = {
   production: false,
-  APIEndpoint: "http://localhost:8080",
-  WSEndpoint: "ws://localhost:8080/ws"
+  APIEndpoint: "http://192.168.1.1:8080",
+  WSEndpoint: "ws://192.168.1.1:8080/ws"
 };
 
 /*
